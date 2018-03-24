@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name roboy_sno)(type KiCad)(uri "$(KIPRJMOD)/roboy_sno.pretty")(options "")(descr ""))
+  (lib (name BGA169CP80_13X13_1100X1100X95B40N)(type Legacy)(uri "$(KIPRJMOD)/roboy_sno.pretty/BGA169CP80_13X13_1100X1100X95B40N.mod")(options "")(descr ""))
+)
