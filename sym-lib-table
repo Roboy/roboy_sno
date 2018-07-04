@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name roboy_sno)(type Legacy)(uri /home/letrend/workspace/roboy_sno/roboy_sno.lib)(options "")(descr ""))
+  (lib (name roboy_sno-rescue)(type Legacy)(uri ${KIPRJMOD}/roboy_sno-rescue.lib)(options "")(descr ""))
 )

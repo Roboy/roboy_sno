@@ -45,7 +45,7 @@ SPI_MOSI
 Text HLabel 4800 2350 2    50   Output ~ 0
 GPIO15
 $Comp
-L Device:R R11
+L roboy_sno-rescue:R-Device R11
 U 1 1 5ABDE584
 P 3800 5550
 F 0 "R11" H 3730 5504 50  0000 R CNN
@@ -56,7 +56,7 @@ F 3 "~" H 3800 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R10
+L roboy_sno-rescue:R-Device R10
 U 1 1 5ABDE6BC
 P 3800 4850
 F 0 "R10" H 3730 4804 50  0000 R CNN
@@ -82,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 3450 8300 3450
 $Comp
-L Device:D_Schottky D1
+L roboy_sno-rescue:D_Schottky-Device D1
 U 1 1 5ABCD9EB
 P 7950 3750
 F 0 "D1" H 7950 3966 50  0000 C CNN
@@ -117,7 +117,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 4100 7450 4300
 $Comp
-L Device:C C9
+L roboy_sno-rescue:C-Device C9
 U 1 1 5ABCD953
 P 7200 4300
 F 0 "C9" V 6948 4300 50  0000 C CNN
@@ -147,7 +147,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3200 7150 3450
 $Comp
-L Device:C C8
+L roboy_sno-rescue:C-Device C8
 U 1 1 5ABCD93E
 P 7150 3050
 F 0 "C8" H 7000 3150 50  0000 L CNN
@@ -158,7 +158,7 @@ F 3 "~" H 7150 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L roboy_sno-rescue:C-Device C11
 U 1 1 5ABCD937
 P 7400 3050
 F 0 "C11" H 7450 3150 50  0000 L CNN
@@ -171,7 +171,7 @@ $EndComp
 Wire Wire Line
 	6650 4000 6400 4000
 $Comp
-L Device:Ferrite_Bead L1
+L roboy_sno-rescue:Ferrite_Bead-Device L1
 U 1 1 5ABCD92F
 P 6800 4000
 F 0 "L1" V 6526 4000 50  0000 C CNN
@@ -245,7 +245,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 3550 7600 3550
 $Comp
-L Device:R R15
+L roboy_sno-rescue:R-Device R15
 U 1 1 5ABCD904
 P 7400 3450
 F 0 "R15" V 7300 3450 50  0000 C CNN
@@ -257,7 +257,7 @@ F 3 "~" H 7400 3450 50  0001 C CNN
 $EndComp
 Connection ~ 7200 3550
 $Comp
-L Device:R R14
+L roboy_sno-rescue:R-Device R14
 U 1 1 5ABCD8FD
 P 7350 3550
 F 0 "R14" V 7450 3550 50  0000 C CNN
@@ -283,7 +283,7 @@ Connection ~ 7450 4100
 Wire Wire Line
 	7600 4100 7450 4100
 $Comp
-L Device:C C10
+L roboy_sno-rescue:C-Device C10
 U 1 1 5ABCD8F1
 P 7250 3900
 F 0 "C10" H 7365 3946 50  0000 L CNN
@@ -294,18 +294,18 @@ F 3 "~" H 7250 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Specialized:USB_B_Mini J7
+L roboy_sno-rescue:USB_B_Mini-Connector_Specialized J7
 U 1 1 5ABCD8EA
 P 8600 3550
 F 0 "J7" H 8371 3448 50  0000 R CNN
 F 1 "USB_B_Mini" H 8371 3539 50  0000 R CNN
-F 2 "Connectors:USB_Micro-B" H 8750 3500 50  0001 C CNN
+F 2 "Connectors_USB:USB_Micro-B_Molex_47346-0001" H 8750 3500 50  0001 C CNN
 F 3 "~" H 8750 3500 50  0001 C CNN
 	1    8600 3550
 	-1   0    0    1   
 $EndComp
 $Comp
-L roboy_sno:FT231XQ-T U5
+L roboy_sno-rescue:FT231XQ-T-roboy_sno U5
 U 1 1 5ABCD8E3
 P 6400 3200
 F 0 "U5" H 6375 3986 50  0000 C CNN
@@ -318,7 +318,7 @@ $EndComp
 Text HLabel 1300 1950 0    50   Input ~ 0
 ESP_EN
 $Comp
-L roboy_sno:ESP8266-ESP-12E U4
+L roboy_sno-rescue:ESP8266-ESP-12E-roboy_sno U4
 U 1 1 5ABE0F5A
 P 3500 2350
 F 0 "U4" H 3600 3677 60  0000 C CNN
@@ -347,7 +347,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2150 1650 2150
 $Comp
-L Device:Q_DUAL_NPN_NPN_E1B1C2E2B2C1 Q1
+L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q1
 U 1 1 5AB76FAE
 P 4450 4850
 F 0 "Q1" H 4641 4896 50  0000 L CNN
@@ -358,7 +358,7 @@ F 3 "~" H 4450 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_DUAL_NPN_NPN_E1B1C2E2B2C1 Q1
+L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q1
 U 2 1 5AB77089
 P 4450 5550
 F 0 "Q1" H 4641 5504 50  0000 L CNN
@@ -403,7 +403,7 @@ Text GLabel 4250 4450 0    50   Input ~ 0
 Text GLabel 4250 5950 0    50   Input ~ 0
 3.3V
 $Comp
-L Device:R R12
+L roboy_sno-rescue:R-Device R12
 U 1 1 5AB82E99
 P 4400 4450
 F 0 "R12" H 4330 4404 50  0000 R CNN
@@ -414,7 +414,7 @@ F 3 "~" H 4400 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R13
+L roboy_sno-rescue:R-Device R13
 U 1 1 5AB82EE7
 P 4400 5950
 F 0 "R13" H 4330 5904 50  0000 R CNN
@@ -441,7 +441,7 @@ Connection ~ 4550 4450
 Text GLabel 2200 1750 0    50   Input ~ 0
 RESET
 $Comp
-L Device:C C7
+L roboy_sno-rescue:C-Device C7
 U 1 1 5AB8EBAE
 P 1650 2300
 F 0 "C7" H 1765 2346 50  0000 L CNN
@@ -464,7 +464,7 @@ Connection ~ 2200 2250
 Wire Wire Line
 	1300 1950 1500 1950
 $Comp
-L Device:R R9
+L roboy_sno-rescue:R-Device R9
 U 1 1 5AC406D8
 P 1650 1950
 F 0 "R9" H 1580 1904 50  0000 R CNN
@@ -478,4 +478,6 @@ Wire Wire Line
 	1800 1950 2200 1950
 Text HLabel 1000 2150 0    50   Input ~ 0
 3.3V
+Text GLabel 7800 3750 3    50   Input ~ 0
+VDD5V
 $EndSCHEMATC
