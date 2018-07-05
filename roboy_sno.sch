@@ -164,27 +164,25 @@ Wire Wire Line
 $Comp
 L roboy_sno-rescue:R-Device R6
 U 1 1 5AC1C6E5
-P 3350 4325
-F 0 "R6" H 3400 4425 50  0000 L CNN
-F 1 "1k" V 3350 4275 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3280 4325 50  0001 C CNN
-F 3 "~" H 3350 4325 50  0001 C CNN
-	1    3350 4325
+P 3925 4700
+F 0 "R6" H 3975 4800 50  0000 L CNN
+F 1 "1k" V 3925 4650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3855 4700 50  0001 C CNN
+F 3 "~" H 3925 4700 50  0001 C CNN
+	1    3925 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L roboy_sno-rescue:R-Device R7
 U 1 1 5AC1C86E
-P 3500 4425
-F 0 "R7" H 3550 4525 50  0000 L CNN
-F 1 "1k" V 3500 4375 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 4425 50  0001 C CNN
-F 3 "~" H 3500 4425 50  0001 C CNN
-	1    3500 4425
+P 3925 4025
+F 0 "R7" H 3975 4125 50  0000 L CNN
+F 1 "10k" V 3925 3975 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3855 4025 50  0001 C CNN
+F 3 "~" H 3925 4025 50  0001 C CNN
+	1    3925 4025
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 4725 3    50   Input ~ 0
-GND
 $Comp
 L roboy_sno-rescue:DSC6083CE2A-032K768-roboy_sno U2
 U 1 1 5AC48FD7
@@ -223,61 +221,6 @@ F 3 "~" H 3700 5775 50  0001 C CNN
 	1    3700 5775
 	0    -1   -1   0   
 $EndComp
-$Comp
-L roboy_sno-rescue:Conn_01x05-Connector_Generic J1
-U 1 1 5AC5A78A
-P 3400 5275
-F 0 "J1" H 3400 4975 50  0000 C CNN
-F 1 "Conn_01x05" V 3400 5275 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3400 5275 50  0001 C CNN
-F 3 "~" H 3400 5275 50  0001 C CNN
-	1    3400 5275
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3350 4175 3600 4175
-Wire Wire Line
-	3500 4275 3950 4275
-Wire Wire Line
-	3500 4575 3350 4575
-Wire Wire Line
-	3350 4575 3350 4475
-Wire Wire Line
-	4250 4275 4250 4325
-Wire Wire Line
-	4250 4325 3700 4325
-Wire Wire Line
-	3700 4325 3700 5075
-Wire Wire Line
-	3750 4375 3750 5175
-Wire Wire Line
-	3650 5475 3650 5575
-Wire Wire Line
-	3600 4675 3600 4175
-Connection ~ 3600 4175
-Wire Wire Line
-	3600 4175 4250 4175
-Wire Wire Line
-	3500 4725 3500 4575
-Connection ~ 3500 4575
-Wire Wire Line
-	4250 4475 3650 4475
-Wire Wire Line
-	4200 5375 4200 4575
-Wire Wire Line
-	4200 4575 4250 4575
-Wire Wire Line
-	3650 5275 3600 5275
-Wire Wire Line
-	3600 5375 4200 5375
-Wire Wire Line
-	3600 5475 3650 5475
-Wire Wire Line
-	3300 5575 3300 4675
-Wire Wire Line
-	3300 5575 3650 5575
-Wire Wire Line
-	3300 4675 3600 4675
 $Comp
 L roboy_sno-rescue:C-Device C1
 U 1 1 5ACEED16
@@ -375,17 +318,6 @@ Text GLabel 10300 4375 0    50   Input ~ 0
 3.3V
 Wire Wire Line
 	10300 4375 10450 4375
-$Comp
-L roboy_sno-rescue:Conn_01x11-Connector_Generic J6
-U 1 1 5ACD5E10
-P 10250 3775
-F 0 "J6" H 10350 4125 50  0000 C CNN
-F 1 "ESP_Conn_01x11" V 10350 3775 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10250 3775 50  0001 C CNN
-F 3 "~" H 10250 3775 50  0001 C CNN
-	1    10250 3775
-	-1   0    0    1   
-$EndComp
 Text GLabel 10200 2775 0    50   Input ~ 0
 ESP_EN
 Text GLabel 10200 2875 0    50   Input ~ 0
@@ -651,31 +583,12 @@ Wire Wire Line
 Wire Wire Line
 	3850 6625 3600 6625
 Wire Wire Line
-	3950 4275 3950 4375
-Wire Wire Line
 	6000 6825 5000 6825
 Wire Wire Line
 	5000 2775 5000 2975
 Connection ~ 5000 2975
 Wire Wire Line
 	5000 2975 5200 2975
-Wire Wire Line
-	3600 5075 3650 5075
-Wire Wire Line
-	3600 5175 3650 5175
-Wire Wire Line
-	3750 4375 3950 4375
-$Comp
-L roboy_sno-rescue:10M16SAU169C8G-roboy_sno U3
-U 1 1 5AB96BED
-P 5300 2725
-F 0 "U3" H 8841 2628 50  0000 L CNN
-F 1 "10M16SAU169C8G" H 8841 2537 50  0000 L CNN
-F 2 "BGA169CP80_13X13_1100X1100X95B40N:BGA169CP80_13X13_1100X1100X95B40N" H 1950 4225 50  0001 C CNN
-F 3 "" H 1950 4225 50  0001 C CNN
-	1    5300 2725
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4250 3375
 NoConn ~ 4250 3475
 NoConn ~ 4250 3575
@@ -686,141 +599,137 @@ NoConn ~ 4250 3975
 NoConn ~ 4250 4075
 NoConn ~ 7200 2725
 NoConn ~ 7300 2725
-NoConn ~ 4250 4675
-NoConn ~ 4250 4775
-NoConn ~ 4250 4875
-NoConn ~ 4250 4975
-Text Label 11000 5650 1    50   ~ 0
+Text Label 1625 7450 0    50   ~ 0
 D0
-Text Label 10900 5650 1    50   ~ 0
+Text Label 1625 7350 0    50   ~ 0
 D1
-Text Label 10800 5650 1    50   ~ 0
+Text Label 1625 7250 0    50   ~ 0
 D2
-Text Label 10700 5650 1    50   ~ 0
+Text Label 1625 7150 0    50   ~ 0
 D3
-Text Label 10600 5650 1    50   ~ 0
+Text Label 1625 7050 0    50   ~ 0
 D4
-Text Label 10500 5650 1    50   ~ 0
+Text Label 1625 6950 0    50   ~ 0
 D5
-Text Label 10400 5650 1    50   ~ 0
+Text Label 1625 6850 0    50   ~ 0
 D6
-Text Label 10300 5650 1    50   ~ 0
+Text Label 1625 6750 0    50   ~ 0
 D7
-Text Label 10200 5650 1    50   ~ 0
+Text Label 1625 6650 0    50   ~ 0
 D8
-Text Label 10100 5650 1    50   ~ 0
+Text Label 1625 6550 0    50   ~ 0
 D9
-Text Label 10000 5650 1    50   ~ 0
+Text Label 1625 6450 0    50   ~ 0
 D10
-Text Label 9900 5650 1    50   ~ 0
+Text Label 1625 6350 0    50   ~ 0
 D11
-Text Label 9800 5650 1    50   ~ 0
+Text Label 1625 6250 0    50   ~ 0
 D12
-Text Label 9700 5650 1    50   ~ 0
+Text Label 1625 6150 0    50   ~ 0
 D13
-Text Label 9600 5650 1    50   ~ 0
+Text Label 1625 6050 0    50   ~ 0
 D14
-Text Label 9500 5650 1    50   ~ 0
+Text Label 1625 5950 0    50   ~ 0
 D15
-Text Label 9400 5650 1    50   ~ 0
+Text Label 2475 7450 0    50   ~ 0
 D16
-Text Label 9300 5650 1    50   ~ 0
+Text Label 2475 7350 0    50   ~ 0
 D17
-Text Label 9200 5650 1    50   ~ 0
+Text Label 2475 7250 0    50   ~ 0
 D18
-Text Label 9100 5650 1    50   ~ 0
+Text Label 2475 7150 0    50   ~ 0
 D19
-Text Label 9000 5650 1    50   ~ 0
+Text Label 2475 7050 0    50   ~ 0
 D20
-Text Label 8900 5650 1    50   ~ 0
+Text Label 2475 6950 0    50   ~ 0
 D21
-Text Label 8800 5650 1    50   ~ 0
+Text Label 2475 6850 0    50   ~ 0
 D22
-Text Label 8700 5650 1    50   ~ 0
+Text Label 2475 6750 0    50   ~ 0
 D23
-Text Label 8600 5650 1    50   ~ 0
+Text Label 2475 6650 0    50   ~ 0
 D24
-Text Label 8500 5650 1    50   ~ 0
+Text Label 2475 6550 0    50   ~ 0
 D25
-Text Label 8400 5650 1    50   ~ 0
+Text Label 2475 6450 0    50   ~ 0
 D26
-Text Label 8300 5650 1    50   ~ 0
+Text Label 2475 6350 0    50   ~ 0
 D27
-Text Label 8200 5650 1    50   ~ 0
+Text Label 2475 6250 0    50   ~ 0
 D28
-Text Label 8100 5650 1    50   ~ 0
+Text Label 2475 6150 0    50   ~ 0
 D29
-Text Label 8000 5650 1    50   ~ 0
+Text Label 2475 6050 0    50   ~ 0
 D30
-Text Label 7900 5650 1    50   ~ 0
+Text Label 2475 5950 0    50   ~ 0
 D31
-Text GLabel 7100 5650 1    50   Input ~ 0
+Text GLabel 1650 3975 2    50   Input ~ 0
 GND
-Text GLabel 7100 6150 3    50   Input ~ 0
+Text GLabel 1150 4375 0    50   Input ~ 0
 3.3V
-Text Label 7900 6150 3    50   ~ 0
+Text Label 1975 5950 2    50   ~ 0
 E31
-Text Label 8000 6150 3    50   ~ 0
+Text Label 1975 6050 2    50   ~ 0
 E30
-Text Label 8100 6150 3    50   ~ 0
+Text Label 1975 6150 2    50   ~ 0
 E29
-Text Label 8200 6150 3    50   ~ 0
+Text Label 1975 6250 2    50   ~ 0
 E28
-Text Label 8300 6150 3    50   ~ 0
+Text Label 1975 6350 2    50   ~ 0
 E27
-Text Label 8400 6150 3    50   ~ 0
+Text Label 1975 6450 2    50   ~ 0
 E26
-Text Label 8500 6150 3    50   ~ 0
+Text Label 1975 6550 2    50   ~ 0
 E25
-Text Label 8600 6150 3    50   ~ 0
+Text Label 1975 6650 2    50   ~ 0
 E24
-Text Label 8700 6150 3    50   ~ 0
+Text Label 1975 6750 2    50   ~ 0
 E23
-Text Label 8800 6150 3    50   ~ 0
+Text Label 1975 6850 2    50   ~ 0
 E22
-Text Label 8900 6150 3    50   ~ 0
+Text Label 1975 6950 2    50   ~ 0
 E21
-Text Label 9000 6150 3    50   ~ 0
+Text Label 1975 7050 2    50   ~ 0
 E20
-Text Label 9100 6150 3    50   ~ 0
+Text Label 1975 7150 2    50   ~ 0
 E19
-Text Label 9200 6150 3    50   ~ 0
+Text Label 1975 7250 2    50   ~ 0
 E18
-Text Label 9300 6150 3    50   ~ 0
+Text Label 1975 7350 2    50   ~ 0
 E17
-Text Label 9400 6150 3    50   ~ 0
+Text Label 1975 7450 2    50   ~ 0
 E16
-Text Label 9500 6150 3    50   ~ 0
+Text Label 1125 5950 2    50   ~ 0
 E15
-Text Label 9600 6150 3    50   ~ 0
+Text Label 1125 6050 2    50   ~ 0
 E14
-Text Label 9700 6150 3    50   ~ 0
+Text Label 1125 6150 2    50   ~ 0
 E13
-Text Label 9800 6150 3    50   ~ 0
+Text Label 1125 6250 2    50   ~ 0
 E12
-Text Label 9900 6150 3    50   ~ 0
+Text Label 1125 6350 2    50   ~ 0
 E11
-Text Label 10000 6150 3    50   ~ 0
+Text Label 1125 6450 2    50   ~ 0
 E10
-Text Label 10100 6150 3    50   ~ 0
+Text Label 1125 6550 2    50   ~ 0
 E9
-Text Label 10200 6150 3    50   ~ 0
+Text Label 1125 6650 2    50   ~ 0
 E8
-Text Label 10300 6150 3    50   ~ 0
+Text Label 1125 6750 2    50   ~ 0
 E7
-Text Label 10400 6150 3    50   ~ 0
+Text Label 1125 6850 2    50   ~ 0
 E6
-Text Label 10500 6150 3    50   ~ 0
+Text Label 1125 6950 2    50   ~ 0
 E5
-Text Label 10600 6150 3    50   ~ 0
+Text Label 1125 7050 2    50   ~ 0
 E4
-Text Label 10700 6150 3    50   ~ 0
+Text Label 1125 7150 2    50   ~ 0
 E3
-Text Label 10800 6150 3    50   ~ 0
+Text Label 1125 7250 2    50   ~ 0
 E2
-Text Label 10900 6150 3    50   ~ 0
+Text Label 1125 7350 2    50   ~ 0
 E1
-Text Label 11000 6150 3    50   ~ 0
+Text Label 1125 7450 2    50   ~ 0
 E0
 Text Label 1700 3275 2    50   ~ 0
 D0
@@ -952,52 +861,34 @@ Text Label 8800 2475 0    50   ~ 0
 E31
 Text Label 8800 2375 0    50   ~ 0
 D31
-$Comp
-L Connector_Generic:Conn_02x40_Odd_Even J2
-U 1 1 5B6DDE7D
-P 9100 5850
-F 0 "J2" V 9104 3763 50  0000 R CNN
-F 1 "Conn_02x40_Odd_Even" V 9195 3763 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x40_P2.54mm_Vertical" H 9100 5850 50  0001 C CNN
-F 3 "~" H 9100 5850 50  0001 C CNN
-	1    9100 5850
-	0    1    1    0   
-$EndComp
-Text Label 7800 5650 1    50   ~ 0
+Text Label 1650 5475 0    50   ~ 0
 D32
-Text Label 7700 5650 1    50   ~ 0
+Text Label 1650 5375 0    50   ~ 0
 D33
-Text Label 7600 5650 1    50   ~ 0
+Text Label 1650 5275 0    50   ~ 0
 D34
-Text Label 7500 5650 1    50   ~ 0
+Text Label 1650 5175 0    50   ~ 0
 D35
-Text Label 7400 5650 1    50   ~ 0
+Text Label 1650 5075 0    50   ~ 0
 D36
-Text Label 7300 5650 1    50   ~ 0
+Text Label 1650 4975 0    50   ~ 0
 D37
-Text Label 7200 5650 1    50   ~ 0
+Text Label 1650 4875 0    50   ~ 0
 D38
-Text Label 7200 6150 3    50   ~ 0
+Text Label 1150 4875 2    50   ~ 0
 E38
-Text Label 7300 6150 3    50   ~ 0
+Text Label 1150 4975 2    50   ~ 0
 E37
-Text Label 7400 6150 3    50   ~ 0
+Text Label 1150 5075 2    50   ~ 0
 E36
-Text Label 7500 6150 3    50   ~ 0
+Text Label 1150 5175 2    50   ~ 0
 E35
-Text Label 7600 6150 3    50   ~ 0
+Text Label 1150 5275 2    50   ~ 0
 E34
-Text Label 7700 6150 3    50   ~ 0
+Text Label 1150 5375 2    50   ~ 0
 E33
-Text Label 7800 6150 3    50   ~ 0
+Text Label 1150 5475 2    50   ~ 0
 E32
-Wire Wire Line
-	3650 5075 3700 5075
-Wire Wire Line
-	3650 5175 3750 5175
-Connection ~ 3950 4375
-Wire Wire Line
-	3950 4375 4250 4375
 Text Label 8800 2575 0    50   ~ 0
 D32
 Text Label 8800 2675 0    50   ~ 0
@@ -1027,16 +918,234 @@ Text Label 7100 4675 3    50   ~ 0
 D38
 Text Label 7000 4675 3    50   ~ 0
 E38
-NoConn ~ 6900 4675
-NoConn ~ 6800 4675
-NoConn ~ 6700 4675
-NoConn ~ 6600 4675
-NoConn ~ 6500 4675
-NoConn ~ 6300 4675
-NoConn ~ 6200 4675
-NoConn ~ 6100 4675
 NoConn ~ 5800 4675
-NoConn ~ 6400 4675
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 5B3E610F
+P 2900 4525
+F 0 "J4" H 2950 4942 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2950 4851 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 2900 4525 50  0001 C CNN
+F 3 "~" H 2900 4525 50  0001 C CNN
+	1    2900 4525
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 4325 2    50   Input ~ 0
+GND
+Text GLabel 3200 4425 2    50   Input ~ 0
+3.3V
+Text GLabel 3200 4725 2    50   Input ~ 0
+GND
+NoConn ~ 4250 4975
+NoConn ~ 4250 4875
+NoConn ~ 4250 4775
+NoConn ~ 4250 4675
+$Comp
+L roboy_sno-rescue:10M16SAU169C8G-roboy_sno U3
+U 1 1 5B414605
+P 5300 2725
+F 0 "U3" H 8841 2628 50  0000 L CNN
+F 1 "10M16SAU169C8G-roboy_sno" H 8841 2537 50  0000 L CNN
+F 2 "BGA169CP80_13X13_1100X1100X95B40N:BGA169CP80_13X13_1100X1100X95B40N" H 1950 4225 50  0001 C CNN
+F 3 "" H 1950 4225 50  0001 C CNN
+	1    5300 2725
+	1    0    0    -1  
+$EndComp
+Text GLabel 2925 3875 0    50   Input ~ 0
+3.3V
 Wire Wire Line
-	3650 4475 3650 5275
+	4250 4175 3925 4175
+Wire Wire Line
+	3925 3875 3650 3875
+Text GLabel 3925 4850 3    50   Input ~ 0
+GND
+Text Label 4250 4375 2    50   ~ 0
+TCK
+Text Label 4250 4275 2    50   ~ 0
+TMS
+Text Label 4250 4475 2    50   ~ 0
+TDI
+Text Label 4250 4575 2    50   ~ 0
+TDO
+$Comp
+L roboy_sno-rescue:R-Device R16
+U 1 1 5B424C8F
+P 3550 4175
+F 0 "R16" H 3600 4275 50  0000 L CNN
+F 1 "10k" V 3550 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3480 4175 50  0001 C CNN
+F 3 "~" H 3550 4175 50  0001 C CNN
+	1    3550 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4025 3650 3875
+Connection ~ 3650 3875
+Wire Wire Line
+	3650 3875 2925 3875
+$Comp
+L roboy_sno-rescue:R-Device R17
+U 1 1 5B434DE1
+P 3750 4175
+F 0 "R17" H 3800 4275 50  0000 L CNN
+F 1 "10k" V 3750 4125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3680 4175 50  0001 C CNN
+F 3 "~" H 3750 4175 50  0001 C CNN
+	1    3750 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4025 3750 4025
+Wire Wire Line
+	3650 4025 3550 4025
+Connection ~ 3650 4025
+Wire Wire Line
+	3550 4475 3550 4325
+Wire Wire Line
+	3550 4475 4250 4475
+Wire Wire Line
+	3750 4325 3925 4325
+Wire Wire Line
+	3925 4325 3925 4275
+Wire Wire Line
+	3925 4275 4250 4275
+Text Label 2700 4325 2    50   ~ 0
+TCK
+Text Label 2700 4425 2    50   ~ 0
+TDO
+Text Label 2700 4525 2    50   ~ 0
+TMS
+Text Label 2700 4725 2    50   ~ 0
+TDI
+NoConn ~ 3200 4525
+NoConn ~ 3200 4625
+NoConn ~ 2700 4625
+Wire Wire Line
+	4250 4375 3925 4375
+Wire Wire Line
+	3925 4375 3925 4550
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J1
+U 1 1 5B465AE7
+P 1425 6750
+F 0 "J1" V 1475 7375 50  0000 R CNN
+F 1 "Conn_02x16_Odd_Even" V 1475 7075 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 1425 6750 50  0001 C CNN
+F 3 "~" H 1425 6750 50  0001 C CNN
+	1    1425 6750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J3
+U 1 1 5B465D60
+P 2275 6750
+F 0 "J3" V 2325 7375 50  0000 R CNN
+F 1 "Conn_02x16_Odd_Even" V 2325 7075 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 2275 6750 50  0001 C CNN
+F 3 "~" H 2275 6750 50  0001 C CNN
+	1    2275 6750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J2
+U 1 1 5B466002
+P 1450 4775
+F 0 "J2" V 1500 5400 50  0000 R CNN
+F 1 "Conn_02x16_Odd_Even" V 1500 5100 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 1450 4775 50  0001 C CNN
+F 3 "~" H 1450 4775 50  0001 C CNN
+	1    1450 4775
+	-1   0    0    1   
+$EndComp
+Text Label 6800 4675 3    50   ~ 0
+E39
+Text Label 6900 4675 3    50   ~ 0
+D39
+Text Label 6700 4675 3    50   ~ 0
+D40
+Text Label 6500 4675 3    50   ~ 0
+D41
+Text Label 6300 4675 3    50   ~ 0
+D42
+Text Label 6600 4675 3    50   ~ 0
+E40
+Text Label 6400 4675 3    50   ~ 0
+E41
+Text Label 6200 4675 3    50   ~ 0
+E42
+NoConn ~ 6100 4675
+Text Label 1650 4775 0    50   ~ 0
+D39
+Text Label 1650 4675 0    50   ~ 0
+D40
+Text Label 1650 4575 0    50   ~ 0
+D41
+Text Label 1650 4475 0    50   ~ 0
+D42
+Text Label 1150 4775 2    50   ~ 0
+E39
+Text Label 1150 4675 2    50   ~ 0
+E40
+Text Label 1150 4575 2    50   ~ 0
+E41
+Text Label 1150 4475 2    50   ~ 0
+E42
+Text GLabel 1650 4075 2    50   Input ~ 0
+GND
+Text GLabel 1650 4175 2    50   Input ~ 0
+GND
+Text GLabel 1650 4275 2    50   Input ~ 0
+GND
+Text GLabel 1650 4375 2    50   Input ~ 0
+GND
+Text GLabel 1150 4275 0    50   Input ~ 0
+3.3V
+Text GLabel 1150 4175 0    50   Input ~ 0
+3.3V
+Text GLabel 1150 4075 0    50   Input ~ 0
+3.3V
+Text GLabel 1150 3975 0    50   Input ~ 0
+3.3V
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J?
+U 1 1 5B4D809C
+P 10150 3475
+F 0 "J?" H 10200 3892 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" V 10200 3300 50  0000 C CNN
+F 2 "" H 10150 3475 50  0001 C CNN
+F 3 "~" H 10150 3475 50  0001 C CNN
+	1    10150 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3275 9525 3275
+Wire Wire Line
+	9525 3275 9525 4275
+Wire Wire Line
+	9525 4275 10450 4275
+Wire Wire Line
+	10450 4175 9600 4175
+Wire Wire Line
+	9600 4175 9600 3375
+Wire Wire Line
+	9600 3375 9950 3375
+Wire Wire Line
+	10450 4075 9675 4075
+Wire Wire Line
+	9675 4075 9675 3475
+Wire Wire Line
+	9675 3475 9950 3475
+Wire Wire Line
+	10450 3975 9750 3975
+Wire Wire Line
+	9750 3975 9750 3575
+Wire Wire Line
+	9750 3575 9950 3575
+Wire Wire Line
+	10450 3875 9825 3875
+Wire Wire Line
+	9825 3875 9825 3675
+Wire Wire Line
+	9825 3675 9950 3675
+NoConn ~ 9950 3775
 $EndSCHEMATC
