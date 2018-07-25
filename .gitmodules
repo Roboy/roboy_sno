@@ -1,0 +1,3 @@
+[submodule "quartus/roboy_fpga_code"]
+	path = quartus/roboy_fpga_code
+	url = https://github.com/Roboy/roboy_fpga_code
