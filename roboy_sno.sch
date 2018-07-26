@@ -312,8 +312,6 @@ Text GLabel 4000 6825 0    50   Input ~ 0
 GND
 Wire Wire Line
 	4000 6825 4100 6825
-Wire Wire Line
-	6000 4675 6000 6825
 Text GLabel 10300 4375 0    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -583,8 +581,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 6625 3600 6625
 Wire Wire Line
-	6000 6825 5000 6825
-Wire Wire Line
 	5000 2775 5000 2975
 Connection ~ 5000 2975
 Wire Wire Line
@@ -739,7 +735,6 @@ Text Label 1700 3075 2    50   ~ 0
 D1
 Text Label 1700 2975 2    50   ~ 0
 E1
-NoConn ~ 1700 2875
 Text Label 1700 2575 2    50   ~ 0
 E2
 Text Label 1700 2675 2    50   ~ 0
@@ -766,7 +761,6 @@ Text Label 1700 975  2    50   ~ 0
 D9
 Text Label 1700 875  2    50   ~ 0
 E9
-NoConn ~ 1700 1675
 Text Label 1700 1475 2    50   ~ 0
 E7
 Text Label 1700 1375 2    50   ~ 0
@@ -932,7 +926,7 @@ F 3 "~" H 2900 4525 50  0001 C CNN
 $EndComp
 Text GLabel 3200 4325 2    50   Input ~ 0
 GND
-Text GLabel 3200 4425 2    50   Input ~ 0
+Text GLabel 3200 4625 2    50   Input ~ 0
 3.3V
 Text GLabel 3200 4725 2    50   Input ~ 0
 GND
@@ -1009,17 +1003,15 @@ Wire Wire Line
 	3925 4325 3925 4275
 Wire Wire Line
 	3925 4275 4250 4275
-Text Label 2700 4325 2    50   ~ 0
+Text Label 2700 4725 2    50   ~ 0
 TCK
-Text Label 2700 4425 2    50   ~ 0
+Text Label 2700 4625 2    50   ~ 0
 TDO
 Text Label 2700 4525 2    50   ~ 0
 TMS
-Text Label 2700 4725 2    50   ~ 0
+Text Label 2700 4325 2    50   ~ 0
 TDI
 NoConn ~ 3200 4525
-NoConn ~ 3200 4625
-NoConn ~ 2700 4625
 Wire Wire Line
 	4250 4375 3925 4375
 Wire Wire Line
@@ -1073,7 +1065,6 @@ Text Label 6400 4675 3    50   ~ 0
 E41
 Text Label 6200 4675 3    50   ~ 0
 E42
-NoConn ~ 6100 4675
 Text Label 1650 4775 0    50   ~ 0
 D39
 Text Label 1650 4675 0    50   ~ 0
@@ -1107,12 +1098,12 @@ Text GLabel 1150 4075 0    50   Input ~ 0
 Text GLabel 1150 3975 0    50   Input ~ 0
 3.3V
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J?
+L Connector_Generic:Conn_02x06_Odd_Even J5
 U 1 1 5B4D809C
 P 10150 3475
-F 0 "J?" H 10200 3892 50  0000 C CNN
+F 0 "J5" H 10200 3892 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" V 10200 3300 50  0000 C CNN
-F 2 "" H 10150 3475 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 10150 3475 50  0001 C CNN
 F 3 "~" H 10150 3475 50  0001 C CNN
 	1    10150 3475
 	1    0    0    -1  
@@ -1148,4 +1139,83 @@ Wire Wire Line
 Wire Wire Line
 	9825 3675 9950 3675
 NoConn ~ 9950 3775
+NoConn ~ 5000 6825
+NoConn ~ 3200 4425
+NoConn ~ 2700 4425
+$Comp
+L Device:LED D?
+U 1 1 5B5F3C33
+P 6100 5250
+AR Path="/5ABCD2F9/5B5F3C33" Ref="D?"  Part="1" 
+AR Path="/5B5F3C33" Ref="D2"  Part="1" 
+F 0 "D2" H 6091 5466 50  0000 C CNN
+F 1 "LED" H 6091 5375 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6100 5250 50  0001 C CNN
+F 3 "~" H 6100 5250 50  0001 C CNN
+	1    6100 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L roboy_sno-rescue:R-Device R?
+U 1 1 5B5F3C3A
+P 6100 4950
+AR Path="/5ABCD2F9/5B5F3C3A" Ref="R?"  Part="1" 
+AR Path="/5B5F3C3A" Ref="R20"  Part="1" 
+F 0 "R20" H 6400 4950 50  0000 R CNN
+F 1 "1k" H 6030 4995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6030 4950 50  0001 C CNN
+F 3 "~" H 6100 4950 50  0001 C CNN
+	1    6100 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 5400 3    50   Input ~ 0
+GND
+NoConn ~ 1700 2875
+$Comp
+L roboy_sno-rescue:R-Device R?
+U 1 1 5B638D90
+P 6000 4950
+AR Path="/5ABCD2F9/5B638D90" Ref="R?"  Part="1" 
+AR Path="/5B638D90" Ref="R21"  Part="1" 
+F 0 "R21" H 6300 4950 50  0000 R CNN
+F 1 "1k" H 5930 4995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5930 4950 50  0001 C CNN
+F 3 "~" H 6000 4950 50  0001 C CNN
+	1    6000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5B64D86C
+P 6000 5250
+AR Path="/5ABCD2F9/5B64D86C" Ref="D?"  Part="1" 
+AR Path="/5B64D86C" Ref="D3"  Part="1" 
+F 0 "D3" H 5991 5466 50  0000 C CNN
+F 1 "LED" H 5991 5375 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6000 5250 50  0001 C CNN
+F 3 "~" H 6000 5250 50  0001 C CNN
+	1    6000 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 5400 6000 5400
+Wire Wire Line
+	6000 4675 6000 4800
+Wire Wire Line
+	6100 4675 6100 4800
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B664763
+P 600 1475
+F 0 "SW1" V 554 1623 50  0000 L CNN
+F 1 "SW_Push" V 645 1623 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 600 1675 50  0001 C CNN
+F 3 "" H 600 1675 50  0001 C CNN
+	1    600  1475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 1675 600  1675
+Text GLabel 600  1275 1    50   Input ~ 0
+GND
 $EndSCHEMATC

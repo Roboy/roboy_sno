@@ -183,8 +183,6 @@ F 3 "~" H 6800 4000 50  0001 C CNN
 $EndComp
 NoConn ~ 5850 3050
 NoConn ~ 5850 2900
-NoConn ~ 5850 2800
-NoConn ~ 5850 2700
 NoConn ~ 5850 2600
 Text GLabel 7600 4100 2    50   Input ~ 0
 GND
@@ -227,8 +225,6 @@ Wire Wire Line
 	7700 3050 8000 3050
 Wire Wire Line
 	7700 3350 7700 3050
-Wire Wire Line
-	6400 4000 6400 3900
 Wire Wire Line
 	7700 4000 7000 4000
 Wire Wire Line
@@ -323,7 +319,7 @@ U 1 1 5ABE0F5A
 P 3500 2350
 F 0 "U4" H 3600 3677 60  0000 C CNN
 F 1 "ESP8266-ESP-12E" H 3600 3571 60  0000 C CNN
-F 2 "ESP8266:ESP-12E_SMD" H 2800 2300 60  0001 C CNN
+F 2 "roboy_sno:ESP-12E_SMD" H 2800 2300 60  0001 C CNN
 F 3 "" H 2800 2300 60  0000 C CNN
 	1    3500 2350
 	1    0    0    -1  
@@ -460,7 +456,6 @@ Wire Wire Line
 	1650 2450 2200 2450
 Wire Wire Line
 	2200 2450 2200 2250
-Connection ~ 2200 2250
 Wire Wire Line
 	1300 1950 1500 1950
 $Comp
@@ -480,4 +475,127 @@ Text HLabel 1000 2150 0    50   Input ~ 0
 3.3V
 Text GLabel 7800 3750 3    50   Input ~ 0
 VDD5V
+$Comp
+L roboy_sno-rescue:R-Device R19
+U 1 1 5B5AB56F
+P 5600 2350
+F 0 "R19" H 5530 2304 50  0000 R CNN
+F 1 "10k" H 5530 2395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 2350 50  0001 C CNN
+F 3 "~" H 5600 2350 50  0001 C CNN
+	1    5600 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 2350 4800 2350
+Wire Wire Line
+	6400 2300 5750 2300
+Wire Wire Line
+	5750 2300 5750 2350
+Connection ~ 6400 2300
+$Comp
+L roboy_sno-rescue:R-Device R18
+U 1 1 5B5B04D5
+P 5600 2100
+F 0 "R18" H 5530 2054 50  0000 R CNN
+F 1 "10k" H 5530 2145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 2100 50  0001 C CNN
+F 3 "~" H 5600 2100 50  0001 C CNN
+	1    5600 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 2100 5450 2250
+Wire Wire Line
+	5450 2250 4800 2250
+Text GLabel 5750 2100 2    50   Input ~ 0
+3.3V
+$Comp
+L Device:LED D6
+U 1 1 5B5AC855
+P 5750 4400
+F 0 "D6" H 5741 4616 50  0000 C CNN
+F 1 "LED" H 5741 4525 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5750 4400 50  0001 C CNN
+F 3 "~" H 5750 4400 50  0001 C CNN
+	1    5750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L roboy_sno-rescue:R-Device R24
+U 1 1 5B5AD79F
+P 6250 4400
+F 0 "R24" H 6180 4354 50  0000 R CNN
+F 1 "1k" H 6180 4445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 4400 50  0001 C CNN
+F 3 "~" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 4400 6100 4400
+Wire Wire Line
+	6400 4400 6400 4000
+Text GLabel 5600 4400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6400 4000 6400 3900
+Connection ~ 2200 2250
+Connection ~ 6400 4000
+$Comp
+L Device:LED D4
+U 1 1 5B5C938C
+P 4900 3350
+F 0 "D4" H 4891 3566 50  0000 C CNN
+F 1 "LED" H 4891 3475 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4900 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4900 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L roboy_sno-rescue:R-Device R22
+U 1 1 5B5C9392
+P 4600 3350
+F 0 "R22" H 4530 3304 50  0000 R CNN
+F 1 "1k" H 4530 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4530 3350 50  0001 C CNN
+F 3 "~" H 4600 3350 50  0001 C CNN
+	1    4600 3350
+	0    1    1    0   
+$EndComp
+Text GLabel 4450 3350 0    50   Input ~ 0
+VDD5V
+Wire Wire Line
+	5850 2700 5050 2700
+Wire Wire Line
+	5050 2700 5050 3350
+$Comp
+L Device:LED D5
+U 1 1 5B5E4F77
+P 4950 3750
+F 0 "D5" H 4941 3966 50  0000 C CNN
+F 1 "LED" H 4941 3875 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4950 3750 50  0001 C CNN
+F 3 "~" H 4950 3750 50  0001 C CNN
+	1    4950 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L roboy_sno-rescue:R-Device R23
+U 1 1 5B5E4F7D
+P 4650 3750
+F 0 "R23" H 4580 3704 50  0000 R CNN
+F 1 "1k" H 4580 3795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4580 3750 50  0001 C CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+	1    4650 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 4500 3750 0    50   Input ~ 0
+VDD5V
+Wire Wire Line
+	5100 2800 5850 2800
+Wire Wire Line
+	5100 2800 5100 3750
 $EndSCHEMATC
