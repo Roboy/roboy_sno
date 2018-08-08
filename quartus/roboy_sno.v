@@ -8,7 +8,8 @@ module roboy_sno(
 		output SPI_MOSI,
 		output SPI_CSO,
 		output SPI_CLK,
-		output ESP_EN
+		output ESP_EN,
+		output [1:0] LED
 );
 
 //assign D = {42{CLK32MHz}};
@@ -17,7 +18,10 @@ module roboy_sno(
 reg [31:0] counter;
 
 assign D[0] = counter[20];
-assign ESP_EN = 0;
+assign ESP_EN = 1;
+
+assign LED[0] = counter[20];
+assign LED[1] = counter[21];
 
 //darkroom (
 //	.clk_clk(CLK32MHz),
@@ -33,8 +37,8 @@ ts4231 (
    .E(E[1])
 );
 
-//always @(posedge CLK32MHz) begin: TOGGLE_ESP
-//		counter <= counter +1;
-//end
+always @(posedge CLK32MHz) begin: TOGGLE_ESP
+		counter <= counter +1;
+end
 
 endmodule
