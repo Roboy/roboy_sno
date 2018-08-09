@@ -8,10 +8,11 @@ module darkroom (
 		output wire       darkroom_0_conduit_end_mosi_o,     // darkroom_0_conduit_end.mosi_o
 		output wire       darkroom_0_conduit_end_sck_o,      //                       .sck_o
 		output wire       darkroom_0_conduit_end_ss_n_o,     //                       .ss_n_o
+		output wire [7:0] darkroom_0_conduit_end_sync_o,     //                       .sync_o
+		inout  wire [7:0] darkroom_0_conduit_end_d_io,       //                       .d_io
+		inout  wire [7:0] darkroom_0_conduit_end_e_io,       //                       .e_io
+		output wire [1:0] darkroom_0_conduit_end_led,        //                       .led
 		input  wire       darkroom_0_conduit_end_trigger_me, //                       .trigger_me
-		output wire [1:0] darkroom_0_conduit_end_sync_o,     //                       .sync_o
-		inout  wire [1:0] darkroom_0_conduit_end_d_io,       //                       .d_io
-		inout  wire [1:0] darkroom_0_conduit_end_e_io,       //                       .e_io
 		input  wire       reset_reset_n                      //                  reset.reset_n
 	);
 
@@ -20,17 +21,18 @@ module darkroom (
 	DarkRoom #(
 		.ENABLE_AVALON_INTERFACE (0),
 		.ENABLE_SPI_TRANSMITTER  (1),
-		.NUMBER_OF_SENSORS       (2),
-		.CLK_SPEED               (32000000)
+		.NUMBER_OF_SENSORS       (8),
+		.CLK_SPEED               (16000000)
 	) darkroom_0 (
 		.reset_n     (~rst_controller_reset_out_reset),   //          reset.reset_n
 		.mosi_o      (darkroom_0_conduit_end_mosi_o),     //    conduit_end.mosi_o
 		.sck_o       (darkroom_0_conduit_end_sck_o),      //               .sck_o
 		.ss_n_o      (darkroom_0_conduit_end_ss_n_o),     //               .ss_n_o
-		.trigger_me  (darkroom_0_conduit_end_trigger_me), //               .trigger_me
 		.sync_o      (darkroom_0_conduit_end_sync_o),     //               .sync_o
 		.D_io        (darkroom_0_conduit_end_d_io),       //               .d_io
 		.E_io        (darkroom_0_conduit_end_e_io),       //               .e_io
+		.LED         (darkroom_0_conduit_end_led),        //               .led
+		.trigger_me  (darkroom_0_conduit_end_trigger_me), //               .trigger_me
 		.clock       (clk_clk),                           //     clock_sink.clk
 		.address     (),                                  // avalon_slave_0.address
 		.read        (),                                  //               .read
