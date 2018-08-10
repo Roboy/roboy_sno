@@ -121,7 +121,7 @@
   <parameter name="CLK_SPEED" value="16000000" />
   <parameter name="ENABLE_AVALON_INTERFACE" value="0" />
   <parameter name="ENABLE_SPI_TRANSMITTER" value="true" />
-  <parameter name="NUMBER_OF_SENSORS" value="8" />
+  <parameter name="NUMBER_OF_SENSORS" value="16" />
  </module>
  <module name="clk_0" kind="clock_source" version="17.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />

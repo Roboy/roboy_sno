@@ -14,7 +14,7 @@ module roboy_sno(
 );
 
 
-parameter NUMBER_OF_SENSORS = 16;
+parameter NUMBER_OF_SENSORS = 16; 
 parameter CLK_SPEED = 16_000_000;
 
 //assign D[15:0] = {16{CLK16MHz}};
@@ -40,23 +40,23 @@ wire [7:0] current_sensor;
 darkroom (
 	.clk_clk(CLK16MHz),
 	.reset_reset_n(BUTTON),
-	.darkroom_0_conduit_end_d_io(D[11:0]),
-	.darkroom_0_conduit_end_e_io(E[11:0]),
+	.darkroom_0_conduit_end_d_io(D[15:0]),
+	.darkroom_0_conduit_end_e_io(E[15:0]),
 	.darkroom_0_conduit_end_mosi_o(mosi),
 	.darkroom_0_conduit_end_sck_o(clk),
 	.darkroom_0_conduit_end_ss_n_o(cso),
-	.darkroom_0_conduit_end_led(LED)
-//	.darkroom_0_conduit_end_trigger_me(trigger)
+	.darkroom_0_conduit_end_led(LED),
+	.darkroom_0_conduit_end_trigger_me(trigger)
 ); 
 
-//wire trigger;
-//
-//altera_edge_detector #(1,1,0)(
-//	.clk(CLK16MHz),
-//	.rst_n(BUTTON),
-//	.signal_in(trigger_counter[20]),
-//	.pulse_out(trigger)
-//);
+wire trigger;
+
+altera_edge_detector #(1,1,0)(
+	.clk(CLK16MHz),
+	.rst_n(BUTTON),
+	.signal_in(trigger_counter[14]),
+	.pulse_out(trigger)
+);
 
 //genvar i;
 //generate 

@@ -4,16 +4,16 @@
 
 `timescale 1 ps / 1 ps
 module darkroom (
-		input  wire       clk_clk,                           //                    clk.clk
-		output wire       darkroom_0_conduit_end_mosi_o,     // darkroom_0_conduit_end.mosi_o
-		output wire       darkroom_0_conduit_end_sck_o,      //                       .sck_o
-		output wire       darkroom_0_conduit_end_ss_n_o,     //                       .ss_n_o
-		output wire [7:0] darkroom_0_conduit_end_sync_o,     //                       .sync_o
-		inout  wire [7:0] darkroom_0_conduit_end_d_io,       //                       .d_io
-		inout  wire [7:0] darkroom_0_conduit_end_e_io,       //                       .e_io
-		output wire [1:0] darkroom_0_conduit_end_led,        //                       .led
-		input  wire       darkroom_0_conduit_end_trigger_me, //                       .trigger_me
-		input  wire       reset_reset_n                      //                  reset.reset_n
+		input  wire        clk_clk,                           //                    clk.clk
+		output wire        darkroom_0_conduit_end_mosi_o,     // darkroom_0_conduit_end.mosi_o
+		output wire        darkroom_0_conduit_end_sck_o,      //                       .sck_o
+		output wire        darkroom_0_conduit_end_ss_n_o,     //                       .ss_n_o
+		output wire [15:0] darkroom_0_conduit_end_sync_o,     //                       .sync_o
+		inout  wire [15:0] darkroom_0_conduit_end_d_io,       //                       .d_io
+		inout  wire [15:0] darkroom_0_conduit_end_e_io,       //                       .e_io
+		output wire [1:0]  darkroom_0_conduit_end_led,        //                       .led
+		input  wire        darkroom_0_conduit_end_trigger_me, //                       .trigger_me
+		input  wire        reset_reset_n                      //                  reset.reset_n
 	);
 
 	wire    rst_controller_reset_out_reset; // rst_controller:reset_out -> DarkRoom_0:reset_n
@@ -21,7 +21,7 @@ module darkroom (
 	DarkRoom #(
 		.ENABLE_AVALON_INTERFACE (0),
 		.ENABLE_SPI_TRANSMITTER  (1),
-		.NUMBER_OF_SENSORS       (8),
+		.NUMBER_OF_SENSORS       (16),
 		.CLK_SPEED               (16000000)
 	) darkroom_0 (
 		.reset_n     (~rst_controller_reset_out_reset),   //          reset.reset_n
