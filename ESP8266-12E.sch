@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -14,12 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3850 3300 3    50   BiDi ~ 0
-SPI_CLK
 Text HLabel 3400 3300 3    50   BiDi ~ 0
 GPIO9
-Text HLabel 3250 3300 3    50   BiDi ~ 0
-SPI_MISO
 Text HLabel 2200 1850 0    50   Input ~ 0
 ADC
 Text HLabel 4800 2750 2    50   Output ~ 0
@@ -36,12 +32,8 @@ Text HLabel 4800 2050 2    50   Output ~ 0
 GPIO4
 Text HLabel 4800 1950 2    50   Output ~ 0
 GPIO5
-Text GLabel 4800 2150 2    50   Input ~ 0
-GPIO0
 Text HLabel 3550 3300 3    50   BiDi ~ 0
 GPIO10
-Text HLabel 3700 3300 3    50   BiDi ~ 0
-SPI_MOSI
 Text HLabel 4800 2350 2    50   Output ~ 0
 GPIO15
 $Comp
@@ -326,8 +318,6 @@ F 3 "" H 2800 2300 60  0000 C CNN
 $EndComp
 Text GLabel 1200 2150 3    50   Input ~ 0
 3.3V
-Text HLabel 3100 3300 3    50   BiDi ~ 0
-SPI_CSO
 Wire Wire Line
 	5250 3750 5850 3750
 Wire Wire Line
@@ -510,38 +500,9 @@ Wire Wire Line
 	5450 2250 4800 2250
 Text GLabel 5750 2100 2    50   Input ~ 0
 3.3V
-$Comp
-L Device:LED D6
-U 1 1 5B5AC855
-P 5750 4400
-F 0 "D6" H 5741 4616 50  0000 C CNN
-F 1 "LED" H 5741 4525 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 5750 4400 50  0001 C CNN
-F 3 "~" H 5750 4400 50  0001 C CNN
-	1    5750 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L roboy_sno-rescue:R-Device R24
-U 1 1 5B5AD79F
-P 6250 4400
-F 0 "R24" H 6180 4354 50  0000 R CNN
-F 1 "1k" H 6180 4445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 4400 50  0001 C CNN
-F 3 "~" H 6250 4400 50  0001 C CNN
-	1    6250 4400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5900 4400 6100 4400
-Wire Wire Line
-	6400 4400 6400 4000
-Text GLabel 5600 4400 0    50   Input ~ 0
-GND
 Wire Wire Line
 	6400 4000 6400 3900
 Connection ~ 2200 2250
-Connection ~ 6400 4000
 $Comp
 L Device:LED D4
 U 1 1 5B5C938C
@@ -598,4 +559,10 @@ Wire Wire Line
 	5100 2800 5850 2800
 Wire Wire Line
 	5100 2800 5100 3750
+NoConn ~ 3100 3300
+NoConn ~ 3250 3300
+NoConn ~ 3700 3300
+NoConn ~ 3850 3300
+Text GLabel 4800 2150 2    50   Input ~ 0
+GPIO0
 $EndSCHEMATC
