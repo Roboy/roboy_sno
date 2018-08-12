@@ -31,8 +31,8 @@ L Connector_Generic_MountingPin:Conn_02x20_Odd_Even_MountingPin J?
 U 1 1 5B786A73
 P 3675 3100
 AR Path="/5B786A73" Ref="J?"  Part="1" 
-AR Path="/5B77F2CF/5B786A73" Ref="J2"  Part="1" 
-F 0 "J2" H 3725 4217 50  0000 C CNN
+AR Path="/5B77F2CF/5B786A73" Ref="J?"  Part="1" 
+F 0 "J?" H 3725 4217 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even_MountingPin" H 3725 4126 50  0000 C CNN
 F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 3675 3100 50  0001 C CNN
 F 3 "~" H 3675 3100 50  0001 C CNN
@@ -84,8 +84,8 @@ L Connector_Generic_MountingPin:Conn_02x20_Odd_Even_MountingPin J?
 U 1 1 5B786B65
 P 2325 3125
 AR Path="/5B786B65" Ref="J?"  Part="1" 
-AR Path="/5B77F2CF/5B786B65" Ref="J1"  Part="1" 
-F 0 "J1" H 2375 4242 50  0000 C CNN
+AR Path="/5B77F2CF/5B786B65" Ref="J?"  Part="1" 
+F 0 "J?" H 2375 4242 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even_MountingPin" H 2375 4151 50  0000 C CNN
 F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 2325 3125 50  0001 C CNN
 F 3 "~" H 2325 3125 50  0001 C CNN
@@ -137,8 +137,8 @@ L Connector_Generic_MountingPin:Conn_02x20_Odd_Even_MountingPin J?
 U 1 1 5B786D21
 P 6300 3075
 AR Path="/5B786D21" Ref="J?"  Part="1" 
-AR Path="/5B77F2CF/5B786D21" Ref="J6"  Part="1" 
-F 0 "J6" H 6350 4192 50  0000 C CNN
+AR Path="/5B77F2CF/5B786D21" Ref="J?"  Part="1" 
+F 0 "J?" H 6350 4192 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even_MountingPin" H 6350 4101 50  0000 C CNN
 F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 6300 3075 50  0001 C CNN
 F 3 "~" H 6300 3075 50  0001 C CNN
@@ -190,8 +190,8 @@ L Connector_Generic_MountingPin:Conn_02x20_Odd_Even_MountingPin J?
 U 1 1 5B786D4F
 P 4950 3100
 AR Path="/5B786D4F" Ref="J?"  Part="1" 
-AR Path="/5B77F2CF/5B786D4F" Ref="J3"  Part="1" 
-F 0 "J3" H 5000 4217 50  0000 C CNN
+AR Path="/5B77F2CF/5B786D4F" Ref="J?"  Part="1" 
+F 0 "J?" H 5000 4217 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even_MountingPin" H 5000 4126 50  0000 C CNN
 F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 4950 3100 50  0001 C CNN
 F 3 "~" H 4950 3100 50  0001 C CNN
@@ -386,4 +386,12 @@ Text HLabel 6100 3875 0    50   Input ~ 0
 E38
 Text HLabel 6100 4075 0    50   Input ~ 0
 E39
+Text GLabel 2375 4325 3    50   Input ~ 0
+GND
+Text GLabel 3725 4300 3    50   Input ~ 0
+GND
+Text GLabel 5000 4300 3    50   Input ~ 0
+GND
+Text GLabel 6350 4275 3    50   Input ~ 0
+GND
 $EndSCHEMATC

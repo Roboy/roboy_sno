@@ -37,10 +37,10 @@ GPIO10
 Text HLabel 4800 2350 2    50   Output ~ 0
 GPIO15
 $Comp
-L roboy_sno-rescue:R-Device R11
+L roboy_sno-rescue:R-Device R?
 U 1 1 5ABDE584
 P 3800 5550
-F 0 "R11" H 3730 5504 50  0000 R CNN
+F 0 "R?" H 3730 5504 50  0000 R CNN
 F 1 "10k" H 3730 5595 50  0000 R CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 5550 50  0001 C CNN
 F 3 "~" H 3800 5550 50  0001 C CNN
@@ -48,10 +48,10 @@ F 3 "~" H 3800 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L roboy_sno-rescue:R-Device R10
+L roboy_sno-rescue:R-Device R?
 U 1 1 5ABDE6BC
 P 3800 4850
-F 0 "R10" H 3730 4804 50  0000 R CNN
+F 0 "R?" H 3730 4804 50  0000 R CNN
 F 1 "10k" H 3730 4895 50  0000 R CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 4850 50  0001 C CNN
 F 3 "~" H 3800 4850 50  0001 C CNN
@@ -74,10 +74,10 @@ Wire Wire Line
 Wire Wire Line
 	7600 3450 8300 3450
 $Comp
-L roboy_sno-rescue:D_Schottky-Device D1
+L roboy_sno-rescue:D_Schottky-Device D?
 U 1 1 5ABCD9EB
 P 7950 3750
-F 0 "D1" H 7950 3966 50  0000 C CNN
+F 0 "D?" H 7950 3966 50  0000 C CNN
 F 1 "D_Schottky" H 7950 3875 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123F" H 7950 3750 50  0001 C CNN
 F 3 "~" H 7950 3750 50  0001 C CNN
@@ -109,10 +109,10 @@ Wire Wire Line
 Wire Wire Line
 	7450 4100 7450 4300
 $Comp
-L roboy_sno-rescue:C-Device C9
+L roboy_sno-rescue:C-Device C?
 U 1 1 5ABCD953
 P 7200 4300
-F 0 "C9" V 6948 4300 50  0000 C CNN
+F 0 "C?" V 6948 4300 50  0000 C CNN
 F 1 "10n" V 7039 4300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7238 4150 50  0001 C CNN
 F 3 "~" H 7200 4300 50  0001 C CNN
@@ -139,10 +139,10 @@ Wire Wire Line
 Wire Wire Line
 	7150 3200 7150 3450
 $Comp
-L roboy_sno-rescue:C-Device C8
+L roboy_sno-rescue:C-Device C?
 U 1 1 5ABCD93E
 P 7150 3050
-F 0 "C8" H 7000 3150 50  0000 L CNN
+F 0 "C?" H 7000 3150 50  0000 L CNN
 F 1 "47pF" H 6950 2950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7188 2900 50  0001 C CNN
 F 3 "~" H 7150 3050 50  0001 C CNN
@@ -150,10 +150,10 @@ F 3 "~" H 7150 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L roboy_sno-rescue:C-Device C11
+L roboy_sno-rescue:C-Device C?
 U 1 1 5ABCD937
 P 7400 3050
-F 0 "C11" H 7450 3150 50  0000 L CNN
+F 0 "C?" H 7450 3150 50  0000 L CNN
 F 1 "47pF" H 7450 2950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7438 2900 50  0001 C CNN
 F 3 "~" H 7400 3050 50  0001 C CNN
@@ -163,10 +163,10 @@ $EndComp
 Wire Wire Line
 	6650 4000 6400 4000
 $Comp
-L roboy_sno-rescue:Ferrite_Bead-Device L1
+L roboy_sno-rescue:Ferrite_Bead-Device L?
 U 1 1 5ABCD92F
 P 6800 4000
-F 0 "L1" V 6526 4000 50  0000 C CNN
+F 0 "L?" V 6526 4000 50  0000 C CNN
 F 1 "Ferrite_Bead" V 6750 4000 50  0000 C CNN
 F 2 "Inductor_SMD:L_0402_1005Metric" V 6730 4000 50  0001 C CNN
 F 3 "~" H 6800 4000 50  0001 C CNN
@@ -233,10 +233,10 @@ Wire Wire Line
 Wire Wire Line
 	7500 3550 7600 3550
 $Comp
-L roboy_sno-rescue:R-Device R15
+L roboy_sno-rescue:R-Device R?
 U 1 1 5ABCD904
 P 7400 3450
-F 0 "R15" V 7300 3450 50  0000 C CNN
+F 0 "R?" V 7300 3450 50  0000 C CNN
 F 1 "27" V 7400 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7330 3450 50  0001 C CNN
 F 3 "~" H 7400 3450 50  0001 C CNN
@@ -245,10 +245,10 @@ F 3 "~" H 7400 3450 50  0001 C CNN
 $EndComp
 Connection ~ 7200 3550
 $Comp
-L roboy_sno-rescue:R-Device R14
+L roboy_sno-rescue:R-Device R?
 U 1 1 5ABCD8FD
 P 7350 3550
-F 0 "R14" V 7450 3550 50  0000 C CNN
+F 0 "R?" V 7450 3550 50  0000 C CNN
 F 1 "27" V 7350 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7280 3550 50  0001 C CNN
 F 3 "~" H 7350 3550 50  0001 C CNN
@@ -271,10 +271,10 @@ Connection ~ 7450 4100
 Wire Wire Line
 	7600 4100 7450 4100
 $Comp
-L roboy_sno-rescue:C-Device C10
+L roboy_sno-rescue:C-Device C?
 U 1 1 5ABCD8F1
 P 7250 3900
-F 0 "C10" H 7365 3946 50  0000 L CNN
+F 0 "C?" H 7365 3946 50  0000 L CNN
 F 1 "100n" H 7365 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7288 3750 50  0001 C CNN
 F 3 "~" H 7250 3900 50  0001 C CNN
@@ -282,10 +282,10 @@ F 3 "~" H 7250 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L roboy_sno-rescue:USB_B_Mini-Connector_Specialized J7
+L roboy_sno-rescue:USB_B_Mini-Connector_Specialized J?
 U 1 1 5ABCD8EA
 P 8600 3550
-F 0 "J7" H 8371 3448 50  0000 R CNN
+F 0 "J?" H 8371 3448 50  0000 R CNN
 F 1 "USB_B_Mini" H 8371 3539 50  0000 R CNN
 F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 8750 3500 50  0001 C CNN
 F 3 "~" H 8750 3500 50  0001 C CNN
@@ -293,10 +293,10 @@ F 3 "~" H 8750 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L roboy_sno-rescue:FT231XQ-T-roboy_sno U5
+L roboy_sno-rescue:FT231XQ-T-roboy_sno U?
 U 1 1 5ABCD8E3
 P 6400 3200
-F 0 "U5" H 6375 3986 50  0000 C CNN
+F 0 "U?" H 6375 3986 50  0000 C CNN
 F 1 "FT231XQ-T" H 6375 4077 50  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 6150 3900 50  0001 C CNN
 F 3 "" H 6150 3900 50  0001 C CNN
@@ -305,17 +305,6 @@ F 3 "" H 6150 3900 50  0001 C CNN
 $EndComp
 Text HLabel 1300 1950 0    50   Input ~ 0
 ESP_EN
-$Comp
-L roboy_sno-rescue:ESP8266-ESP-12E-roboy_sno U4
-U 1 1 5ABE0F5A
-P 3500 2350
-F 0 "U4" H 3600 3677 60  0000 C CNN
-F 1 "ESP8266-ESP-12E" H 3600 3571 60  0000 C CNN
-F 2 "roboy_sno:ESP-12E_SMD" H 2800 2300 60  0001 C CNN
-F 3 "" H 2800 2300 60  0000 C CNN
-	1    3500 2350
-	1    0    0    -1  
-$EndComp
 Text GLabel 1200 2150 3    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -330,13 +319,11 @@ Wire Wire Line
 	5350 3650 5350 1750
 Wire Wire Line
 	5350 1750 4800 1750
-Wire Wire Line
-	1000 2150 1650 2150
 $Comp
-L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q1
+L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q?
 U 1 1 5AB76FAE
 P 4450 4850
-F 0 "Q1" H 4641 4896 50  0000 L CNN
+F 0 "Q?" H 4641 4896 50  0000 L CNN
 F 1 "Q_DUAL_NPN_NPN_E1B1C2E2B2C1" H 4641 4805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4650 4950 50  0001 C CNN
 F 3 "~" H 4450 4850 50  0001 C CNN
@@ -344,10 +331,10 @@ F 3 "~" H 4450 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q1
+L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q?
 U 2 1 5AB77089
 P 4450 5550
-F 0 "Q1" H 4641 5504 50  0000 L CNN
+F 0 "Q?" H 4641 5504 50  0000 L CNN
 F 1 "Q_DUAL_NPN_NPN_E1B1C2E2B2C1" H 4641 5595 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4650 5650 50  0001 C CNN
 F 3 "~" H 4450 5550 50  0001 C CNN
@@ -389,10 +376,10 @@ Text GLabel 4250 4450 0    50   Input ~ 0
 Text GLabel 4250 5950 0    50   Input ~ 0
 3.3V
 $Comp
-L roboy_sno-rescue:R-Device R12
+L roboy_sno-rescue:R-Device R?
 U 1 1 5AB82E99
 P 4400 4450
-F 0 "R12" H 4330 4404 50  0000 R CNN
+F 0 "R?" H 4330 4404 50  0000 R CNN
 F 1 "10k" H 4330 4495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4330 4450 50  0001 C CNN
 F 3 "~" H 4400 4450 50  0001 C CNN
@@ -400,10 +387,10 @@ F 3 "~" H 4400 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L roboy_sno-rescue:R-Device R13
+L roboy_sno-rescue:R-Device R?
 U 1 1 5AB82EE7
 P 4400 5950
-F 0 "R13" H 4330 5904 50  0000 R CNN
+F 0 "R?" H 4330 5904 50  0000 R CNN
 F 1 "10k" H 4330 5995 50  0000 R CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4330 5950 50  0001 C CNN
 F 3 "~" H 4400 5950 50  0001 C CNN
@@ -426,50 +413,17 @@ Wire Wire Line
 Connection ~ 4550 4450
 Text GLabel 2200 1750 0    50   Input ~ 0
 RESET
-$Comp
-L roboy_sno-rescue:C-Device C7
-U 1 1 5AB8EBAE
-P 1650 2300
-F 0 "C7" H 1765 2346 50  0000 L CNN
-F 1 "100n" H 1765 2255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1688 2150 50  0001 C CNN
-F 3 "~" H 1650 2300 50  0001 C CNN
-	1    1650 2300
-	1    0    0    -1  
-$EndComp
-Connection ~ 1650 2150
-Wire Wire Line
-	1650 2150 2200 2150
 Wire Wire Line
 	2150 2250 2200 2250
-Wire Wire Line
-	1650 2450 2200 2450
-Wire Wire Line
-	2200 2450 2200 2250
-Wire Wire Line
-	1300 1950 1500 1950
-$Comp
-L roboy_sno-rescue:R-Device R9
-U 1 1 5AC406D8
-P 1650 1950
-F 0 "R9" H 1580 1904 50  0000 R CNN
-F 1 "10k" H 1580 1995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1580 1950 50  0001 C CNN
-F 3 "~" H 1650 1950 50  0001 C CNN
-	1    1650 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1800 1950 2200 1950
 Text HLabel 1000 2150 0    50   Input ~ 0
 3.3V
 Text GLabel 7800 3750 3    50   Input ~ 0
 VDD5V
 $Comp
-L roboy_sno-rescue:R-Device R19
+L roboy_sno-rescue:R-Device R?
 U 1 1 5B5AB56F
 P 5600 2350
-F 0 "R19" H 5530 2304 50  0000 R CNN
+F 0 "R?" H 5530 2304 50  0000 R CNN
 F 1 "10k" H 5530 2395 50  0000 R CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 2350 50  0001 C CNN
 F 3 "~" H 5600 2350 50  0001 C CNN
@@ -484,10 +438,10 @@ Wire Wire Line
 	5750 2300 5750 2350
 Connection ~ 6400 2300
 $Comp
-L roboy_sno-rescue:R-Device R18
+L roboy_sno-rescue:R-Device R?
 U 1 1 5B5B04D5
 P 5600 2100
-F 0 "R18" H 5530 2054 50  0000 R CNN
+F 0 "R?" H 5530 2054 50  0000 R CNN
 F 1 "10k" H 5530 2145 50  0000 R CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 2100 50  0001 C CNN
 F 3 "~" H 5600 2100 50  0001 C CNN
@@ -502,67 +456,27 @@ Text GLabel 5750 2100 2    50   Input ~ 0
 3.3V
 Wire Wire Line
 	6400 4000 6400 3900
-Connection ~ 2200 2250
-$Comp
-L Device:LED D4
-U 1 1 5B5C938C
-P 4900 3350
-F 0 "D4" H 4891 3566 50  0000 C CNN
-F 1 "LED" H 4891 3475 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4900 3350 50  0001 C CNN
-F 3 "~" H 4900 3350 50  0001 C CNN
-	1    4900 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L roboy_sno-rescue:R-Device R22
-U 1 1 5B5C9392
-P 4600 3350
-F 0 "R22" H 4530 3304 50  0000 R CNN
-F 1 "1k" H 4530 3395 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4530 3350 50  0001 C CNN
-F 3 "~" H 4600 3350 50  0001 C CNN
-	1    4600 3350
-	0    1    1    0   
-$EndComp
-Text GLabel 4450 3350 0    50   Input ~ 0
-VDD5V
-Wire Wire Line
-	5850 2700 5050 2700
-Wire Wire Line
-	5050 2700 5050 3350
-$Comp
-L Device:LED D5
-U 1 1 5B5E4F77
-P 4950 3750
-F 0 "D5" H 4941 3966 50  0000 C CNN
-F 1 "LED" H 4941 3875 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4950 3750 50  0001 C CNN
-F 3 "~" H 4950 3750 50  0001 C CNN
-	1    4950 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L roboy_sno-rescue:R-Device R23
-U 1 1 5B5E4F7D
-P 4650 3750
-F 0 "R23" H 4580 3704 50  0000 R CNN
-F 1 "1k" H 4580 3795 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4580 3750 50  0001 C CNN
-F 3 "~" H 4650 3750 50  0001 C CNN
-	1    4650 3750
-	0    1    1    0   
-$EndComp
-Text GLabel 4500 3750 0    50   Input ~ 0
-VDD5V
-Wire Wire Line
-	5100 2800 5850 2800
-Wire Wire Line
-	5100 2800 5100 3750
 NoConn ~ 3100 3300
 NoConn ~ 3250 3300
 NoConn ~ 3700 3300
 NoConn ~ 3850 3300
 Text GLabel 4800 2150 2    50   Input ~ 0
 GPIO0
+$Comp
+L roboy_sno-rescue:ESP8266-ESP-12E-roboy_sno U?
+U 1 1 5ABE0F5A
+P 3500 2350
+F 0 "U?" H 3600 3677 60  0000 C CNN
+F 1 "ESP8266-ESP-12E" H 3600 3571 60  0000 C CNN
+F 2 "roboy_sno:ESP-12E_SMD" H 2800 2300 60  0001 C CNN
+F 3 "" H 2800 2300 60  0000 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5850 2700
+NoConn ~ 5850 2800
+Wire Wire Line
+	1000 2150 2200 2150
+Wire Wire Line
+	1300 1950 2200 1950
 $EndSCHEMATC
