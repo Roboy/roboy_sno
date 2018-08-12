@@ -1,0 +1,661 @@
+EESchema Schematic File Version 4
+LIBS:roboy_sno-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3425 4025 3    50   BiDi ~ 0
+GPIO9
+Text HLabel 2225 2575 0    50   Input ~ 0
+ADC
+Text HLabel 4825 3475 2    50   Output ~ 0
+GPIO16
+Text HLabel 4825 3375 2    50   Output ~ 0
+GPIO14
+Text HLabel 4825 3275 2    50   Output ~ 0
+GPIO12
+Text HLabel 4825 3175 2    50   Output ~ 0
+GPIO13
+Text HLabel 4825 2975 2    50   Output ~ 0
+GPIO2
+Text HLabel 4950 2775 2    50   Output ~ 0
+GPIO4
+Text HLabel 4950 2675 2    50   Output ~ 0
+GPIO5
+Text HLabel 3575 4025 3    50   BiDi ~ 0
+GPIO10
+Text HLabel 4825 3075 2    50   Output ~ 0
+GPIO15
+$Comp
+L roboy_sno-rescue:R-Device R16
+U 1 1 5ABDE584
+P 3825 6275
+F 0 "R16" H 3755 6229 50  0000 R CNN
+F 1 "10k" H 3755 6320 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3755 6275 50  0001 C CNN
+F 3 "~" H 3825 6275 50  0001 C CNN
+	1    3825 6275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L roboy_sno-rescue:R-Device R15
+U 1 1 5ABDE6BC
+P 3825 5575
+F 0 "R15" H 3755 5529 50  0000 R CNN
+F 1 "10k" H 3755 5620 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3755 5575 50  0001 C CNN
+F 3 "~" H 3825 5575 50  0001 C CNN
+	1    3825 5575
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2175 2975 0    50   Input ~ 0
+GND
+NoConn ~ 8725 3875
+Wire Wire Line
+	8625 3875 8025 3875
+Wire Wire Line
+	7825 4475 7725 4475
+Wire Wire Line
+	8125 4475 8325 4475
+Wire Wire Line
+	8325 4075 7725 4075
+Wire Wire Line
+	7725 4275 8325 4275
+Wire Wire Line
+	7625 4175 8325 4175
+$Comp
+L roboy_sno-rescue:D_Schottky-Device D5
+U 1 1 5ABCD9EB
+P 7975 4475
+F 0 "D5" H 7975 4691 50  0000 C CNN
+F 1 "D_Schottky" H 7975 4600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 7975 4475 50  0001 C CNN
+F 3 "~" H 7975 4475 50  0001 C CNN
+	1    7975 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 4075 5875 4075
+NoConn ~ 5875 3875
+NoConn ~ 5875 3975
+NoConn ~ 5875 4175
+Wire Wire Line
+	5675 4275 5875 4275
+Text GLabel 5675 4275 0    50   Input ~ 0
+RTS
+Text GLabel 5725 4075 0    50   Input ~ 0
+DTR
+Wire Wire Line
+	7025 4725 6975 4725
+Connection ~ 7025 4725
+Wire Wire Line
+	7025 5025 7025 4725
+Wire Wire Line
+	7075 5025 7025 5025
+Wire Wire Line
+	7475 4825 7275 4825
+Wire Wire Line
+	7475 5025 7375 5025
+Wire Wire Line
+	7475 4825 7475 5025
+$Comp
+L roboy_sno-rescue:C-Device C5
+U 1 1 5ABCD953
+P 7225 5025
+F 0 "C5" V 6973 5025 50  0000 C CNN
+F 1 "10n" V 7064 5025 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7263 4875 50  0001 C CNN
+F 3 "~" H 7225 5025 50  0001 C CNN
+	1    7225 5025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7175 3625 7175 3525
+Wire Wire Line
+	7175 3525 7425 3525
+Connection ~ 7425 3525
+Wire Wire Line
+	7425 3625 7425 3525
+Wire Wire Line
+	7225 4275 7225 3925
+Wire Wire Line
+	7175 4175 7275 4175
+Wire Wire Line
+	7575 4225 7725 4225
+Wire Wire Line
+	7575 4175 7575 4225
+Wire Wire Line
+	7425 3925 7225 3925
+Wire Wire Line
+	7175 3925 7175 4175
+$Comp
+L roboy_sno-rescue:C-Device C4
+U 1 1 5ABCD93E
+P 7175 3775
+F 0 "C4" H 7025 3875 50  0000 L CNN
+F 1 "47pF" H 6975 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7213 3625 50  0001 C CNN
+F 3 "~" H 7175 3775 50  0001 C CNN
+	1    7175 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L roboy_sno-rescue:C-Device C7
+U 1 1 5ABCD937
+P 7425 3775
+F 0 "C7" H 7475 3875 50  0000 L CNN
+F 1 "47pF" H 7475 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7463 3625 50  0001 C CNN
+F 3 "~" H 7425 3775 50  0001 C CNN
+	1    7425 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 4725 6425 4725
+$Comp
+L roboy_sno-rescue:Ferrite_Bead-Device L1
+U 1 1 5ABCD92F
+P 6825 4725
+F 0 "L1" V 6551 4725 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6775 4725 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 6755 4725 50  0001 C CNN
+F 3 "~" H 6825 4725 50  0001 C CNN
+	1    6825 4725
+	0    1    1    0   
+$EndComp
+NoConn ~ 5875 3775
+NoConn ~ 5875 3625
+NoConn ~ 5875 3325
+Text GLabel 7625 4825 2    50   Input ~ 0
+GND
+Text GLabel 8325 3525 2    50   Input ~ 0
+GND
+Text GLabel 7075 3175 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6625 3025 7075 3025
+Wire Wire Line
+	6625 3175 6625 3025
+Connection ~ 6625 3025
+Wire Wire Line
+	6525 3025 6625 3025
+Wire Wire Line
+	6525 3025 6525 3175
+Wire Wire Line
+	7075 3025 7075 3175
+Connection ~ 6525 3025
+Wire Wire Line
+	6425 3025 6525 3025
+Wire Wire Line
+	6425 3175 6425 3025
+Wire Wire Line
+	6275 4925 6275 4625
+Wire Wire Line
+	7125 4925 6275 4925
+Wire Wire Line
+	7125 4475 7125 4925
+Wire Wire Line
+	7125 4475 7025 4475
+Connection ~ 7125 4475
+Wire Wire Line
+	7125 4025 7125 4475
+Wire Wire Line
+	7025 4025 7125 4025
+Wire Wire Line
+	8025 3775 8025 3875
+Wire Wire Line
+	7725 3775 8025 3775
+Wire Wire Line
+	7725 4075 7725 3775
+Wire Wire Line
+	7725 4725 7025 4725
+Wire Wire Line
+	7725 4475 7725 4725
+Connection ~ 7175 4175
+Wire Wire Line
+	7025 4175 7175 4175
+Wire Wire Line
+	7225 4275 7025 4275
+Wire Wire Line
+	7725 4225 7725 4275
+Wire Wire Line
+	7625 4275 7625 4175
+Wire Wire Line
+	7525 4275 7625 4275
+$Comp
+L roboy_sno-rescue:R-Device R22
+U 1 1 5ABCD904
+P 7425 4175
+F 0 "R22" V 7325 4175 50  0000 C CNN
+F 1 "27" V 7425 4175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7355 4175 50  0001 C CNN
+F 3 "~" H 7425 4175 50  0001 C CNN
+	1    7425 4175
+	0    1    1    0   
+$EndComp
+Connection ~ 7225 4275
+$Comp
+L roboy_sno-rescue:R-Device R21
+U 1 1 5ABCD8FD
+P 7375 4275
+F 0 "R21" V 7475 4275 50  0000 C CNN
+F 1 "27" V 7375 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7305 4275 50  0001 C CNN
+F 3 "~" H 7375 4275 50  0001 C CNN
+	1    7375 4275
+	0    1    1    0   
+$EndComp
+Connection ~ 8025 3775
+Wire Wire Line
+	7425 3525 8025 3525
+Wire Wire Line
+	8025 3525 8325 3525
+Connection ~ 8025 3525
+Wire Wire Line
+	8025 3525 8025 3775
+Wire Wire Line
+	7275 4475 7125 4475
+Wire Wire Line
+	7275 4825 7275 4775
+Connection ~ 7475 4825
+Wire Wire Line
+	7625 4825 7475 4825
+$Comp
+L roboy_sno-rescue:C-Device C6
+U 1 1 5ABCD8F1
+P 7275 4625
+F 0 "C6" H 7390 4671 50  0000 L CNN
+F 1 "100n" H 7390 4580 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7313 4475 50  0001 C CNN
+F 3 "~" H 7275 4625 50  0001 C CNN
+	1    7275 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L roboy_sno-rescue:USB_B_Mini-Connector_Specialized J7
+U 1 1 5ABCD8EA
+P 8625 4275
+F 0 "J7" H 8396 4173 50  0000 R CNN
+F 1 "USB_B_Mini" H 8396 4264 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 8775 4225 50  0001 C CNN
+F 3 "~" H 8775 4225 50  0001 C CNN
+	1    8625 4275
+	-1   0    0    1   
+$EndComp
+$Comp
+L roboy_sno-rescue:FT231XQ-T-roboy_sno U5
+U 1 1 5ABCD8E3
+P 6425 3925
+F 0 "U5" H 6400 4711 50  0000 C CNN
+F 1 "FT231XQ-T" H 6400 4802 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm" H 6175 4625 50  0001 C CNN
+F 3 "" H 6175 4625 50  0001 C CNN
+	1    6425 3925
+	-1   0    0    1   
+$EndComp
+Text HLabel 1325 2675 0    50   Input ~ 0
+ESP_EN
+Text GLabel 1225 2875 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5275 4475 5875 4475
+Wire Wire Line
+	4825 2575 5275 2575
+Wire Wire Line
+	5275 2575 5275 4475
+Wire Wire Line
+	5875 4375 5375 4375
+Wire Wire Line
+	5375 4375 5375 2475
+Wire Wire Line
+	5375 2475 4825 2475
+$Comp
+L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q1
+U 1 1 5AB76FAE
+P 4475 5575
+F 0 "Q1" H 4666 5621 50  0000 L CNN
+F 1 "Q_DUAL_NPN_NPN_E1B1C2E2B2C1" H 4666 5530 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4675 5675 50  0001 C CNN
+F 3 "~" H 4475 5575 50  0001 C CNN
+	1    4475 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L roboy_sno-rescue:Q_DUAL_NPN_NPN_E1B1C2E2B2C1-Device Q1
+U 2 1 5AB77089
+P 4475 6275
+F 0 "Q1" H 4666 6229 50  0000 L CNN
+F 1 "Q_DUAL_NPN_NPN_E1B1C2E2B2C1" H 4666 6320 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 4675 6375 50  0001 C CNN
+F 3 "~" H 4475 6275 50  0001 C CNN
+	2    4475 6275
+	1    0    0    1   
+$EndComp
+Text GLabel 3225 5575 0    50   Input ~ 0
+RTS
+Text GLabel 3225 6275 0    50   Input ~ 0
+DTR
+Wire Wire Line
+	3225 5575 3475 5575
+Wire Wire Line
+	3975 5575 4275 5575
+Wire Wire Line
+	4275 6275 3975 6275
+Wire Wire Line
+	3675 6275 3525 6275
+Wire Wire Line
+	3475 5575 3475 6025
+Wire Wire Line
+	3475 6025 4575 6025
+Wire Wire Line
+	4575 6025 4575 6075
+Connection ~ 3475 5575
+Wire Wire Line
+	3475 5575 3675 5575
+Wire Wire Line
+	4575 5775 4575 5875
+Wire Wire Line
+	4575 5875 3525 5875
+Wire Wire Line
+	3525 5875 3525 6275
+Connection ~ 3525 6275
+Wire Wire Line
+	3525 6275 3225 6275
+Text GLabel 4275 5175 0    50   Input ~ 0
+3.3V
+Text GLabel 4275 6675 0    50   Input ~ 0
+3.3V
+$Comp
+L roboy_sno-rescue:R-Device R17
+U 1 1 5AB82E99
+P 4425 5175
+F 0 "R17" H 4355 5129 50  0000 R CNN
+F 1 "10k" H 4355 5220 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4355 5175 50  0001 C CNN
+F 3 "~" H 4425 5175 50  0001 C CNN
+	1    4425 5175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L roboy_sno-rescue:R-Device R18
+U 1 1 5AB82EE7
+P 4425 6675
+F 0 "R18" H 4355 6629 50  0000 R CNN
+F 1 "10k" H 4355 6720 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4355 6675 50  0001 C CNN
+F 3 "~" H 4425 6675 50  0001 C CNN
+	1    4425 6675
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4625 5175 2    50   Input ~ 0
+GPIO0
+Text GLabel 4675 6675 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	4575 6475 4575 6675
+Wire Wire Line
+	4675 6675 4575 6675
+Connection ~ 4575 6675
+Wire Wire Line
+	4575 5175 4575 5375
+Wire Wire Line
+	4575 5175 4625 5175
+Connection ~ 4575 5175
+Text GLabel 2225 2475 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	2175 2975 2225 2975
+Text HLabel 1025 2875 0    50   Input ~ 0
+3.3V
+Text GLabel 7825 4475 3    50   Input ~ 0
+VDD5V
+$Comp
+L roboy_sno-rescue:R-Device R20
+U 1 1 5B5AB56F
+P 5625 3075
+F 0 "R20" H 5555 3029 50  0000 R CNN
+F 1 "10k" H 5555 3120 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5555 3075 50  0001 C CNN
+F 3 "~" H 5625 3075 50  0001 C CNN
+	1    5625 3075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5475 3075 4825 3075
+Wire Wire Line
+	6425 3025 5775 3025
+Wire Wire Line
+	5775 3025 5775 3075
+Connection ~ 6425 3025
+$Comp
+L roboy_sno-rescue:R-Device R19
+U 1 1 5B5B04D5
+P 5625 2825
+F 0 "R19" H 5555 2779 50  0000 R CNN
+F 1 "10k" H 5555 2870 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5555 2825 50  0001 C CNN
+F 3 "~" H 5625 2825 50  0001 C CNN
+	1    5625 2825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5475 2825 5475 2975
+Wire Wire Line
+	5475 2975 4825 2975
+Text GLabel 5775 2825 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6425 4725 6425 4625
+NoConn ~ 3125 4025
+NoConn ~ 3275 4025
+NoConn ~ 3725 4025
+NoConn ~ 3875 4025
+Text GLabel 4825 2875 2    50   Input ~ 0
+GPIO0
+$Comp
+L roboy_sno-rescue:ESP8266-ESP-12E-roboy_sno U4
+U 1 1 5ABE0F5A
+P 3525 3075
+F 0 "U4" H 3625 4402 60  0000 C CNN
+F 1 "ESP8266-ESP-12E" H 3625 4296 60  0000 C CNN
+F 2 "roboy_sno:ESP-12E_SMD" H 2825 3025 60  0001 C CNN
+F 3 "" H 2825 3025 60  0000 C CNN
+	1    3525 3075
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5875 3425
+NoConn ~ 5875 3525
+Wire Wire Line
+	1025 2875 2225 2875
+Wire Wire Line
+	1325 2675 2225 2675
+$Comp
+L Sensor_Motion:BNO055 U7
+U 1 1 5B759CA1
+P 8850 2350
+F 0 "U7" H 8850 3228 50  0000 C CNN
+F 1 "BNO055" H 8850 2575 50  0000 C CNN
+F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 9100 1700 50  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 8850 2550 50  0001 C CNN
+	1    8850 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8750 1425 1    50   Input ~ 0
+3.3V
+Text GLabel 8750 3125 3    50   Input ~ 0
+GND
+Wire Wire Line
+	8750 3125 8750 3075
+Wire Wire Line
+	8750 3075 8925 3075
+Wire Wire Line
+	8950 3075 8950 3050
+Connection ~ 8750 3075
+Wire Wire Line
+	8750 3075 8750 3050
+$Comp
+L Device:C C8
+U 1 1 5B7603B9
+P 9450 3000
+F 0 "C8" H 9565 3046 50  0000 L CNN
+F 1 "100n" H 9565 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9488 2850 50  0001 C CNN
+F 3 "~" H 9450 3000 50  0001 C CNN
+	1    9450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3150 9000 3150
+Wire Wire Line
+	8925 3150 8925 3075
+Connection ~ 8925 3075
+Wire Wire Line
+	8925 3075 8950 3075
+$Comp
+L Device:C C1
+U 1 1 5B763595
+P 8350 1450
+F 0 "C1" V 8098 1450 50  0000 C CNN
+F 1 "100n" V 8189 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8388 1300 50  0001 C CNN
+F 3 "~" H 8350 1450 50  0001 C CNN
+	1    8350 1450
+	0    1    1    0   
+$EndComp
+Text GLabel 8200 1450 0    50   Input ~ 0
+GND
+$Comp
+L roboy_sno-rescue:R-Device R24
+U 1 1 5B763A84
+P 8100 2250
+F 0 "R24" H 8030 2204 50  0000 R CNN
+F 1 "10k" H 8030 2295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8030 2250 50  0001 C CNN
+F 3 "~" H 8100 2250 50  0001 C CNN
+	1    8100 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9450 2750 9975 2750
+Wire Wire Line
+	9975 2750 9975 3150
+Wire Wire Line
+	9975 3150 9450 3150
+Connection ~ 9450 3150
+Wire Wire Line
+	9975 2750 9975 2650
+Wire Wire Line
+	9975 2650 9450 2650
+Connection ~ 9975 2750
+NoConn ~ 9450 2350
+NoConn ~ 9450 1850
+Wire Wire Line
+	8750 3075 8150 3075
+Wire Wire Line
+	8150 3075 8150 2850
+Wire Wire Line
+	8150 2750 8250 2750
+Wire Wire Line
+	8250 2850 8150 2850
+Connection ~ 8150 2850
+Wire Wire Line
+	8150 2850 8150 2750
+NoConn ~ 8250 2350
+$Comp
+L roboy_sno-rescue:R-Device R23
+U 1 1 5B77D61B
+P 8100 1850
+F 0 "R23" H 8030 1804 50  0000 R CNN
+F 1 "10k" H 8030 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8030 1850 50  0001 C CNN
+F 3 "~" H 8100 1850 50  0001 C CNN
+	1    8100 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 1425 8750 1450
+Connection ~ 8750 1650
+Wire Wire Line
+	8750 1450 8500 1450
+Connection ~ 8750 1450
+Wire Wire Line
+	8750 1450 8750 1650
+Wire Wire Line
+	7950 1850 7950 1650
+Wire Wire Line
+	7950 1650 8750 1650
+Wire Wire Line
+	7950 2250 7950 1850
+Connection ~ 7950 1850
+Wire Wire Line
+	4825 2675 4900 2675
+Wire Wire Line
+	4825 2775 4925 2775
+Wire Wire Line
+	4900 2675 4900 2350
+Wire Wire Line
+	4900 2350 7250 2350
+Wire Wire Line
+	7250 2350 7250 2650
+Wire Wire Line
+	7250 2650 8250 2650
+Connection ~ 4900 2675
+Wire Wire Line
+	4900 2675 4950 2675
+Wire Wire Line
+	8250 2550 4925 2550
+Wire Wire Line
+	4925 2550 4925 2775
+Connection ~ 4925 2775
+Wire Wire Line
+	4925 2775 4950 2775
+NoConn ~ 8250 2050
+Wire Wire Line
+	8750 1650 8950 1650
+Text GLabel 9750 3500 2    50   Input ~ 0
+3.3V
+$Comp
+L Device:C C9
+U 1 1 5B7C0022
+P 9000 3300
+F 0 "C9" H 9115 3346 50  0000 L CNN
+F 1 "6.8n" H 9115 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9038 3150 50  0001 C CNN
+F 3 "~" H 9000 3300 50  0001 C CNN
+	1    9000 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 9000 3150
+Wire Wire Line
+	9000 3150 8925 3150
+$Comp
+L Device:C C10
+U 1 1 5B7C00E3
+P 9450 3300
+F 0 "C10" H 9565 3346 50  0000 L CNN
+F 1 "120n" H 9565 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9488 3150 50  0001 C CNN
+F 3 "~" H 9450 3300 50  0001 C CNN
+	1    9450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3450 9000 3500
+Wire Wire Line
+	9000 3500 9450 3500
+Wire Wire Line
+	9450 3450 9450 3500
+Connection ~ 9450 3500
+Wire Wire Line
+	9450 3500 9750 3500
+$EndSCHEMATC
